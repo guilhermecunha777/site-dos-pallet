@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background: var(--whatsapp);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--whatsapp);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+}
