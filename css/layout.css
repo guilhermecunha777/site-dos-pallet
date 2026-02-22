@@ -29,8 +29,14 @@
   text-align: center;
 }
 
-.grid{
+.grid {
   margin: 150px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--cinza);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .gallery .grid {
@@ -47,9 +53,9 @@
 }
 
 .site-footer {
-  text-align: center;              /* centraliza */
-  background-color: #0b5d2a;       /* verde mais escuro */
-  color: #ffffff;                  /* texto branco */
+  text-align: center;
+  background-color: #0b5d2a;
+  color: #ffffff;
   padding: 20px 10px;
   font-size: 14px;
 }
@@ -59,7 +65,12 @@
   height: auto;
   border-radius: 6px;
   object-fit: cover;
-  
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b5d2a;
 }
 
 .topbar {
@@ -73,17 +84,65 @@
   height: auto;
 }
 
+.location {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--cinza);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.location h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b5d2a;
+}
+
 /* ========= MOBILE FIRST ========= */
 @media (max-width: 768px) {
+  /* 1. Ajuste do Topo (Hero) */
   .hero {
-    padding: 70px 16px 50px;
+    padding: 40px 16px; 
+    display: flex;
+    flex-direction: column; /* Empilha o logo e o texto */
+    align-items: center;    /* Centraliza tudo */
+    text-align: center;
+  }
+
+  /* 2. Ajuste do Logo para não atropelar o texto */
+  .logo { 
+    max-width: 120px;       /* Reduz o tamanho do logo no mobile */
+    margin-bottom: 20px;    /* Cria espaço entre o logo e o título */
+    display: block;
   }
 
   .hero-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;      /* Diminui a fonte para não quebrar feio */
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
 
   .hero-content p {
     font-size: 0.95rem;
+  }
+
+  /* 3. Ajuste dos Cards e Fotos */
+  .card-pallets {
+    margin: 10px;           /* Margem para o fundo prata aparecer nas bordas */
+    padding: 15px;
+  }
+
+  .galeria-fotos {
+    display: flex;
+    flex-direction: column; /* Fotos uma embaixo da outra no mobile */
+    gap: 15px;              /* Espaço entre as fotos */
+  }
+
+  .galeria-fotos img {
+    width: 100%;            /* Foto ocupa a largura total do card */
+    height: 250px;          /* Altura fixa para manter o padrão */
+    object-fit: cover;      /* Não deixa a imagem esticar ou achatar */
+    border-radius: 8px;
   }
 }

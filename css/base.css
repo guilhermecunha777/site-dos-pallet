@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -16,6 +17,27 @@ body {
   color: var(--bg-light);
   padding: 60px 20px;
   text-align: center;
+}
+
+.about {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--cinza);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b5d2a;
+}
+
+.about p {
+  text-align: center;
+  line-height: 1.6;
+  color: #333;
 }
 
 .about,
