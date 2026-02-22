@@ -1,8 +1,25 @@
 .hero {
+  position: relative;
   background: var(--primary);
-  color: #fff;
-  padding: 60px 20px;
+  color: var(--bg-light);
+  padding: 20px 20px 20px;
   text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .about,
@@ -12,11 +29,15 @@
   text-align: center;
 }
 
+.grid{
+  margin: 150px;
+}
+
 .gallery .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  gap: 5px;
+  margin-top: 50px;
 }
 
 .footer {
@@ -25,9 +46,44 @@
   padding: 20px;
 }
 
+.site-footer {
+  text-align: center;              /* centraliza */
+  background-color: #0b5d2a;       /* verde mais escuro */
+  color: #ffffff;                  /* texto branco */
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
 .gallery img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 6px;
   object-fit: cover;
+  
+}
+
+.topbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+/* ========= MOBILE FIRST ========= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 70px 16px 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
 }
